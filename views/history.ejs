@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include head %>
+        <link rel="stylesheet" type="text/css" href="stylesheets/history.css">
+        <title>History</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+
+         <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#myTable').DataTable();
+        });        
+    </script>
+
+    </head>
+    <body>
+        <% include navbar%>
+            <form action="/historyProcess" method="post">
+                <h1>History of Routes</h1>
+                <table id ="myTable">
+                    <thead>
+                        <th>Location</th>
+                        <th>Distance</th>
+                        <th></th>
+                    </thead>
+                        <tbody>
+                        <% results.map((row)=>{ %>
+                            <tr>
+                                <td><%= row.currentLocation%></td>
+                                <td><%= row.distance%></td>
+                                <td><button class="btn btn-muted">GO</button></td>
+                                
+                            </tr>
+                        <% }) %>
+
+                        </tbody>
+                    </table>
+                </form>
+    </body>
+</html>

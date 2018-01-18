@@ -1,0 +1,44 @@
+body{
+	background-color: lightblue;
+}
+
+.box{
+	background-color:white;
+	margin-top:100px;
+	border-radius:5%;
+
+
+}
+
+.title{
+	font-size: 40px;
+	margin-top:50px;
+}
+
+input, button{
+	
+	border:1px solid transparent;
+}
+
+input{
+	background-color: #dee1e5;
+	margin: 15px;
+	height: 40px;
+	width: 70%;
+	padding:5px;
+}
+
+.inputbutton{
+	margin-bottom:5px;
+}
+
+.forgotpassword{
+	text-decoration:underline;
+	margin-bottom:80px;
+	font-size:12px;
+	color:black;
+}
+
+a{
+	color:white;
+}

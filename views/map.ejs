@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>City Runner</title>
+    <% include head %>
+    <script>
+        var address= <%- JSON.stringify(address) %>
+        var distance = <%- JSON.stringify(distance) %>
+    </script>
+    <script type="text/javascript" src="/javascripts/scripts.js"></script>
+
+    <%
+        encodedDistance = encodeURI(distance);
+        encodedAddress = encodeURI(address);
+        resultsRoute = '/results?distance='+encodedDistance+'&address='+encodedAddress;
+    %>
+    
+    
+    
+    <script type="text/javascript" src="/javascripts/timer.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mapstyle.css">
+    </head>
+    <body>
+        <% include navbar %>
+        <h1>Maps Page</h1>
+        <form class="map-form" action="/mapsProcess" method = "post">
+            <div class="container">
+                <div class="row">
+                    <div id="chronoExample">
+                        <div class="values">00:00:00</div>
+                        <div>
+                            <div class="startButton col-sm-1 text-center">Start</div>
+                            <div class="pauseButton col-sm-1 text-center" >Pause</div>
+                            <a id="stopButtonLink" href="<%=resultsRoute%>"><div class="stopButton col-sm-1 text-center">Stop</div></a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 wrapper">
+                        <div class="grid">
+                       
+                        
+                        <!-- if id = map
+                            angle = 90
+                        if id = map2
+                            angle = 45
+                        if id = map3
+                            angle = 120
+                        if id = map4
+                            angle = 25 -->
+                        
+                            <div class="mapNumber1 col-sm-12"> 
+                                <!-- span tags for isotope -->
+                                <div class="col-xs-7 col-sm-7 col-md-7" id="map"></div>
+                                <div class="col-xs-4 col-sm-4 col-md-4" id="instructions"></div>
+                                <div class="col-sm-12"><button id="mapNumber1" name="angle" class="btn btn-muted">Show map 1</button></div>
+                            </div> 
+                            <div class="mapNumber2 col-sm-12">
+                                <div class="col-xs-7 col-sm-7 col-md-7" id="map2" ></div>
+                                <div class="col-xs-4 col-sm-4 col-md-4" id="instructions2"> </div>
+                                <div class="col-sm-12"><button id="mapNumber2" name="angle" class="btn btn-muted">Show map 2</button></div>
+                            </div>
+                            <div class="mapNumber3 col-sm-12"> 
+                                <div class="col-xs-7 col-sm-7 col-md-7" id="map3" ></div>
+                                <div class="col-xs-4 col-sm-4 col-md-4" id="instructions3"> </div>
+                                <div class="col-sm-12"><button id="mapNumber3" name="angle" class="btn btn-muted">Show map 3</button></div>
+                            </div>
+                            <div class="mapNumber4 col-sm-12"> 
+                                <div class="col-xs-7 col-sm-7 col-md-7" id="map4" ></div>
+                                <div class="col-xs-4 col-sm-4 col-md-4" id="instructions4"></div> 
+                                <div class="col-sm-12"><button id="mapNumber4" name="angle" class="btn btn-muted">Show map 4</button></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+                
+        
+        <div id="warning-panel"></div>
+
+    </body>
+</html>

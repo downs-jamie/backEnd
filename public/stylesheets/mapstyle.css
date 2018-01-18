@@ -1,0 +1,162 @@
+body{
+    background: url("/images/background2.png") center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#map {
+    height: 400px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.81);
+    margin-right: 10px;
+    margin-bottom:5px;
+
+    
+}
+
+#map2 {
+    height: 400px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.81);
+    margin-right: 10px;
+    margin-bottom:5px;
+  
+}
+
+#map3 {
+    height: 400px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.81);
+    margin-right: 10px;
+    margin-bottom:5px;
+    
+}
+
+#map4 {
+    height: 400px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.81);
+    margin-right: 10px;
+    margin-bottom:5px;
+   
+}
+
+.info {
+    /* padding: 10px; */
+    margin-top: 10px;
+    /* padding: 10px; */
+}
+
+#floating-panel {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+#warning-panel {
+    display: none;
+}
+
+.warnbox-content,
+.warnbox-c1,
+.warnbox-c2 {
+    display: none;
+    background-color: transparent;
+    z-index: -5;
+}
+
+
+#instructions select,
+#instructions input {
+    font-size: 15px;
+}
+
+#instructions select {
+    width: 100%;
+}
+
+#instructions i {
+    font-size: 12px;
+}
+
+#instructions {
+    font-family: ‘Roboto’, ‘sans-serif’;
+    line-height: 30px;
+    height: 400px;
+    float: right;
+    overflow: scroll;
+    /* background-color: #F6F6FA; */
+    background-color: rgba(246, 246, 250, 0.4);
+    margin-top: 20px;
+}
+
+#instructions2 {
+    font-family: ‘Roboto’, ‘sans-serif’;
+    line-height: 30px;
+    height: 400px;
+    float: right;
+    overflow: scroll;
+    /* background-color: #F6F6FA; */
+    background-color: rgba(246, 246, 250, 0.4);
+    margin-top: 20px;
+}
+
+#instructions3 {
+    font-family: ‘Roboto’, ‘sans-serif’;
+    line-height: 30px;
+    height: 400px;
+    float: right;
+    overflow: scroll;
+    /* background-color: #F6F6FA; */
+    background-color: rgba(246, 246, 250, 0.4);
+    margin-top: 20px;
+}
+
+#instructions4 {
+    font-family: ‘Roboto’, ‘sans-serif’;
+    line-height: 30px;
+    height: 400px;
+    float: right;
+    overflow: scroll;
+    /* background-color: #F6F6FA; */
+    background-color: rgba(246, 246, 250, 0.4);
+    margin-top: 20px;
+}
+
+.wrapper {
+    height: 600px;
+}
+
+.grid {
+    height: 600px;
+}
+
+.startButton{
+    color:black;
+    border:1px solid black;
+    text-decoration:none;
+    background-color:white;
+
+}
+.stopButton{
+    color:black;
+    border:1px solid black;
+    text-decoration:none;
+    background-color:white;
+}
+.pauseButton{
+    color:black;
+    border:1px solid black;
+    text-decoration:none;
+    background-color:white;
+}
+

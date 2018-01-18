@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>City Runner</title>
+    <% include head %>
+    <script>
+        var address= <%- JSON.stringify(address) %>
+        var distance = <%- JSON.stringify(distance) %>
+    </script>
+    <script>
+        $('#mapNumber1').click(function(){
+            var angle = 90
+        });
+    </script>
+    <script type="text/javascript" src="/javascripts/historyscripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mapstyle.css">
+    </head>
+    <body>
+        <% include navbar %>
+        <h1>Maps Page</h1>
+        <form action="/mapsProcess" method = "post">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12" id="wrapper">
+                        <!-- if id = map
+                            angle = 90
+                        if id = map2
+                            angle = 45
+                        if id = map3
+                            angle = 120
+                        if id = map4
+                            angle = 25 -->
+                        <span> 
+                            <!-- span tags for isotope -->
+                            <div class="col-xs-7 col-sm-7 col-md-7" id="map"></div>
+                            <div class="col-xs-4 col-sm-4 col-md-4" id="instructions"></div>
+                            <div class="col-sm-12"><button id="mapNumber1" name="angle" class="btn btn-muted">GO!</button></div>
+
+                        </span> 
+                        <!-- <span id="mapNumber2">
+                            <div class="col-xs-7 col-sm-7 col-md-7" id="map2" ></div>
+                            <div class="col-xs-4 col-sm-4 col-md-4" id="instructions2"> </div>
+                            <div class="col-sm-12"><button name="angle" class="btn btn-muted">GO!</button></div>
+                        </span>
+                        <span id="mapNumber3"> 
+                            <div class="col-xs-7 col-sm-7 col-md-7" id="map3" ></div>
+                            <div class="col-xs-4 col-sm-4 col-md-4" id="instructions3"> </div>
+                            <div class="col-sm-12"><button name="angle" class="btn btn-muted">GO!</button></div>
+                        </span>
+                        <span id="mapNumber4"> 
+                            <div class="col-xs-7 col-sm-7 col-md-7" id="map4" ></div>
+                            <div class="col-xs-4 col-sm-4 col-md-4" id="instructions4"></div> 
+                            <div class="col-sm-12"><button name="angle" class="btn btn-muted">GO!</button></div>
+                        </span> -->
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+                
+        
+        <div id="warning-panel"></div>
+
+    </body>
+</html>

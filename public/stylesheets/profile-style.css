@@ -1,0 +1,9 @@
+img {
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.fields {
+    border-bottom: 2px solid black;
+}

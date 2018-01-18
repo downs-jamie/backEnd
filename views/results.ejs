@@ -1,0 +1,47 @@
+<!-- Display for user:
+    Message: 
+    Data: distance, time (comes from TIMESTAMP), calories -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+	<%include head %>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+
+     <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+            $('#myTable').DataTable();
+        });
+      </script>
+
+</head>
+<body>
+	<%include navbar %>
+	<h1>Your Results</h1>
+	<div class="container">
+		<div class="row">
+			 <table id ="myTable">
+            <thead>
+                <th>Total Time</th>
+                <th>Distance</th>
+                <th>Location</th>
+            </thead>
+                <tbody>
+                <% results.map((row)=>{ %>
+                    <tr>
+                        <td><%= row.hours%>: <%= row.minutes%>: <%= row.seconds%></td>
+                <% }) %>
+                        <td><%=distance%></td>
+                        <td><%=address%></td>
+                    </tr>
+
+                </tbody>
+            </table>
+		</div>
+	</div>
+
+
+</body>
+</html>

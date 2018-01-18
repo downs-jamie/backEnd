@@ -1,0 +1,185 @@
+/* body{
+	background: url("cloud.jpg")no-repeat center;
+	/* background-color: #4f555e; */
+
+
+/* } */
+
+/*.parallax {
+    background: url("/images/skylineatl.jpg") no-repeat center;
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-size: cover;
+}*/
+
+.container {
+    background: url("/images/background.png") no-repeat center;
+    /*background-color:lightblue;*/
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    height: 600px;
+}
+
+
+.box {
+    height: 300px;
+    /* width: 100%; */
+    /* border: 1px solid black; */
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-family: "Optima";
+    background-color: #F6F6FA;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.81);
+    padding:30px;
+}
+
+
+/* #first{
+	height: 100vh;
+	width: 100vw;
+	margin: auto;
+} */
+
+input {
+    width: 170px;
+    position: relative;
+    /* margin-top: 10px; */
+}
+
+select {
+    /* margin-top:10px; */
+    width: 120px;
+    border-radius: 0px;
+    position: relative;
+}
+
+button {
+    /* margin-top:10px; */
+    width: 70px;
+    position: relative;
+   
+}
+
+.info {
+    /* padding: 10px; */
+    margin-top: 10px;
+    /* padding: 10px; */
+}
+
+
+.milesBox {
+    font-size: 20px;
+    margin-top: 5px;
+    display: none;
+    /*border:1px solid black;*/
+    /*background-color: #F6F6FA;*/
+}
+
+.login {
+    position: absolute;
+    margin: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.navbar {
+    /*position: absolute;*/
+    margin-bottom: -10px
+}
+
+.navbar-right {
+    text-align: right;
+}
+
+
+/*.navbar{
+	position: absolute;
+}*/
+
+#title {
+    text-align: center;
+    font-size: 40px;
+    /*position: relative;*/
+    /*margin-left:520px;*/
+    letter-spacing: 10px;
+}
+
+
+
+.info {
+    /* padding: 10px; */
+    margin-top: 10px;
+    /* padding: 10px; */
+}
+
+#floating-panel {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+#warning-panel {
+    display: none;
+}
+
+.warnbox-content,
+.warnbox-c1,
+.warnbox-c2 {
+    display: none;
+    background-color: transparent;
+    z-index: -5;
+}
+
+
+#instructions select,
+#instructions input {
+    font-size: 15px;
+}
+
+#instructions select {
+    width: 100%;
+}
+
+#instructions i {
+    font-size: 12px;
+}
+
+#instructions, #instruction2, #instructions3, #instructions4 {
+    font-family: ‘Roboto’, ‘sans-serif’;
+    line-height: 30px;
+    padding-left: 10px;
+    height: 600px;
+    float: right;
+    overflow: scroll;
+    /* background-color: #F6F6FA; */
+    background-color: rgba(246, 246, 250, 0.4);
+    display: none;
+    margin-top: 20px;
+}
+
+#chronoExample .col-sm-1{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

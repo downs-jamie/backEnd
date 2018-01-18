@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include head %>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/registerpage.css">
+	<title>Login</title>
+</head>
+<body>
+	<% include navbar %>
+	<div class="container">
+		<div class="row">
+			<form action="/users/loginProcess" method="post">
+				<div class="box col-sm-4 col-sm-offset-4 text-center">
+					<div class="title">Login</div>
+					<div>
+						<input name="username" type="text" placeholder="username">
+					</div>
+					<div>
+						<input name="password" type="password" placeholder="password">
+					</div>
+					<div>
+						<button class="inputbutton btn btn-primary">Login</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
